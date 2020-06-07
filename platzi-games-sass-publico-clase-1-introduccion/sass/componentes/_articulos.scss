@@ -1,0 +1,17 @@
+.articulos{
+     width: 50%;
+    padding: 0px 0 0 50px;
+    background: $oscuro;
+    color: $claro;
+    .articulo{
+        padding: 50px;
+   
+    border-bottom: 2px solid $color2;
+    span{
+        color: $color2;
+        text-transform: uppercase;
+        font-family: $fuente2;
+    }
+
+}
+}

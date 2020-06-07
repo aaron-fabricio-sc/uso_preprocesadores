@@ -1,0 +1,38 @@
+.galeria{
+    display: flex;
+    flex-direction: column;
+    width:  60%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 0 0 30px;
+    justify-content: space-evenly;
+    @include caja;
+    &__foto-principal{
+        float: left;
+        margin-right: 10px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &__fotos-adicionales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 50%;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        img{
+            width: 90px;
+            height: 90px;
+        }
+
+    }
+    h2{
+        margin-bottom: 10px;
+        color: $oscuro;
+        font-weight: 600;
+        font-size: 20px;
+
+    }
+}

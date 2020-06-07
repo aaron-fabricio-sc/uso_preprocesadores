@@ -1,0 +1,50 @@
+$fuente1:'Lato', sans-serif;
+$fuente2:'Oswald', sans-serif;
+$oscuro: #333333;
+$claro : #ffffff;
+$color2:#8841DA;
+$color3:#3f579a;
+@mixin caja {
+	border-radius: 20px;
+	box-shadow: 0px 20px 33px 0px rgba(0,0,0,.5);
+	color: $oscuro;
+	background: $claro;
+}
+
+@function get-opacity($color, $nivel){
+	@return rgba($color,$nivel)
+}
+
+@each $header, $size in (h1:3.1rem,h2: 2.5rem, h3:2rem){
+	#{$header} {
+		font-size: $size;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $fuente2;
+		color: $color2;
+
+	}
+	
+
+}
+@each $parrafos, $size in (p:1.7rem, span:1.5rem){
+	#{$parrafos} {
+		font-size: $size;
+		margin: 0;
+		
+		font-family: $fuente1;
+
+	}
+	
+
+}
+* {
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+body {
+	margin: 10;
+
+}
